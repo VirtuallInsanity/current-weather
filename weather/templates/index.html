@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="under-box"></div>
+    <div class="box">
+        <p>{{ weather.city }}</p>
+        <span class="temp">{{ weather.temp }}° C </span>
+        <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="Image">
+        <p>{{ weather.description|title }}</p>
+    </div>
+
+{% endblock %}
